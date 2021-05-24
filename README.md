@@ -1,4 +1,4 @@
-# RestaurantRecommendation
+# Restaurant Recommendation
 Restaurant Recommendation System using Collaborative Filtering Algorithms Like ALS,SVD and SGD
 
 #### RESULTS
