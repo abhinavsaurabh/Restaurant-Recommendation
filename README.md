@@ -10,3 +10,5 @@ Restaurant Recommendation System using Collaborative Filtering Algorithms Like A
 | SGD		              | 2.5194437078503342 |             2.476078061616359 |
 
 We obtained best MSE for SGD
+
+We used Yelp dataset. Highest no of restaurant was in Austin andPortland. So we worked on the city these two city with variousalgorithms like SVD,Cosine Similarity,ALS,SGD. Best MSE obtain wasfrom SGD 2.519 for Austin and 2.476 for Portland.
