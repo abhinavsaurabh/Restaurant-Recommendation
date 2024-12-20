@@ -1,14 +1,50 @@
-# Restaurant Recommendation
-Restaurant Recommendation System using Collaborative Filtering Algorithms Like ALS,SVD and SGD
 
-#### RESULTS
-|  **Models**		    |	**MSE in Austin Restaurant**	| 	**MSE in Portland Restaurant**	| 
-| ------------- 	    | ------------- 	|                 ------------- 	|
-| SVD			            | 17.72956170325437 |               18.154128047816524 | 
-| Cosine Similarity		| 17.72956170325437 |              18.216949652884058 | 
-| ALS	                | 17.720206854789584 |            18.205941902691375|
-| SGD		              | 2.5194437078503342 |             2.476078061616359 |
+# Restaurant Recommendation System
 
-We obtained best MSE for SGD
+This project develops a Restaurant Recommendation System utilizing collaborative filtering algorithms, including Alternating Least Squares (ALS), Singular Value Decomposition (SVD), and Stochastic Gradient Descent (SGD).
 
-We used Yelp dataset. Highest no of restaurant was in Austin andPortland. So we worked on the city these two city with various algorithms like SVD,Cosine Similarity,ALS,SGD. Best MSE obtain wasfrom SGD 2.519 for Austin and 2.476 for Portland.
+## Project Overview
+
+The system analyzes user preferences and restaurant features to provide personalized dining recommendations.
+By implementing and comparing various collaborative filtering techniques, the project identifies the most effective algorithm for accurate recommendations.
+
+## Dataset
+
+The Yelp dataset serves as the foundation for this project, focusing on restaurants in Austin and Portland due to their substantial data volume.
+
+## Algorithms Implemented
+
+- **SVD (Singular Value Decomposition):** A matrix factorization method that decomposes the user-item interaction matrix to predict missing entries.
+- **Cosine Similarity:** Measures similarity between users or items based on their interaction vectors.
+- **ALS (Alternating Least Squares):** A matrix factorization technique that alternates between fixing user and item matrices to minimize error.
+- **SGD (Stochastic Gradient Descent):** An optimization algorithm that minimizes the error in predictions by iteratively updating model parameters.
+
+## Results
+
+The performance of each algorithm was evaluated using Mean Squared Error (MSE) for both Austin and Portland datasets:
+
+| Model              | MSE (Austin) | MSE (Portland) |
+|--------------------|--------------|----------------|
+| SVD                | 17.73        | 18.15          |
+| Cosine Similarity  | 17.73        | 18.22          |
+| ALS                | 17.72        | 18.21          |
+| SGD                | **2.52**     | **2.48**       |
+
+The SGD algorithm achieved the lowest MSE, indicating superior performance in both cities.
+
+## Conclusion
+
+This project demonstrates the effectiveness of collaborative filtering algorithms in restaurant recommendation systems, with SGD providing the most accurate results.
+
+## Repository Contents
+
+- `Data_Preprocessing_Yelp_Dataset_.ipynb`: Notebook detailing data preprocessing steps.
+- `Restaurant_Recommendation_System.ipynb`: Notebook containing the implementation of the recommendation system.
+- `Project Presentation.pdf`: Slides summarizing the project.
+- `README.md`: Project overview and documentation.
+
+## License
+
+This project is licensed under the MIT License.
+
+For more details, visit the [GitHub repository](https://github.com/abhinavsaurabh/Restaurant-Recommendation).
